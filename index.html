@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050707" />
+  <meta name="description" content="Felik Fvnky Store Music Koleksi — jual beli lagu, remix, FL Studio project, stems, MIDI, preset, dan sound pack." />
+  <title>Felik Fvnky Store — Music Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Felik Fvnky Store Home">
+        <span class="brand-mark">FS</span>
+        <span class="brand-name">Felik Fvnky Store</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a href="#marketplace">Koleksi</a>
+        <a href="#categories">Kategori</a>
+        <a href="#featured">Featured</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon-btn" id="openSearchBtn" aria-label="Cari">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.1-5.15a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0Z"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Keranjang">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.95-1.55L20.5 8H6M10 20a1 1 0 1 1-2 0m10 0a1 1 0 1 1-2 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="profile-btn" id="profileBtn" aria-label="Akun">A</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="marketplace">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <span class="eyebrow"><i></i> THE PRODUCER MARKET</span>
+          <h1>Temukan project dan<br><span>Style Remix kesukaanmu.</span></h1>
+          <p>Koleksi khusus remix dan FL Studio project. Cari, preview, beli, lalu lanjut produksi tanpa ribet.</p>
+
+          <form class="hero-search" id="searchForm">
+            <svg viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.1-5.15a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0Z"/></svg>
+            <input id="searchInput" type="search" placeholder="Cari FLP, Style, Project..." autocomplete="off">
+            <kbd>/</kbd>
+          </form>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Jelajahi Project <span>→</span></a>
+            <button class="btn btn-ghost" id="howItWorksBtn">Cara belanja</button>
+          </div>
+
+          <div class="hero-trust">
+            <span>✓ Instant download</span>
+            <span>✓ Preview sebelum beli</span>
+            <span>✓ Lisensi jelas</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-strip">
+        <div><strong>50+</strong><span>Products</span></div>
+        <div><strong>3+</strong><span>Creators</span></div>
+        <div><strong>12k+</strong><span>Downloads</span></div>
+        <div><strong>4.9/5</strong><span>Average rating</span></div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Browse</span>
+            <h2>Pilih koleksi</h2>
+          </div>
+          <button class="text-btn" id="allCategoriesBtn">Lihat semua <span>→</span></button>
+        </div>
+        <div class="category-row" id="categoryRow"></div>
+      </section>
+
+      <section class="section" id="featured">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">PILIHAN MINGGU INI</span>
+            <h2>Project pilihan</h2>
+          </div>
+          <button class="text-btn" id="featuredBtn">Featured <span>→</span></button>
+        </div>
+        <div class="featured-grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="section product-section" id="products">
+        <div class="section-heading products-heading">
+          <div>
+            <span class="section-kicker">Koleksi</span>
+            <h2>Semua project</h2>
+            <p id="resultInfo">Menampilkan semua produk</p>
+          </div>
+          <div class="toolbar">
+            <button class="filter-btn" id="filterBtn">☷ Filter</button>
+            <select id="sortSelect" aria-label="Urutkan produk">
+              <option value="popular">Paling populer</option>
+              <option value="newest">Terbaru</option>
+              <option value="price-low">Harga terendah</option>
+              <option value="price-high">Harga tertinggi</option>
+              <option value="rating">Rating tertinggi</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-panel" id="filterPanel">
+          <div class="filter-group">
+            <span>Jenis produk</span>
+            <label><input type="checkbox" value="remix" class="type-filter"> Remix</label>
+            <label><input type="checkbox" value="flp" class="type-filter"> FL Studio Project</label>
+          </div>
+          <div class="filter-group price-group">
+            <span>Harga maksimal</span>
+            <input id="priceRange" type="range" min="0" max="500000" step="10000" value="500000">
+            <strong id="priceValue">Rp500.000</strong>
+          </div>
+          <button class="clear-filter" id="clearFiltersBtn">Reset filter</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state hidden" id="emptyState">
+          <div class="empty-icon">⌕</div>
+          <h3>Produk tidak ditemukan</h3>
+          <p>Coba kata kunci atau filter yang berbeda.</p>
+          <button class="btn btn-primary" id="resetSearchBtn">Reset pencarian</button>
+        </div>
+      </section>
+
+      <section class="seller-cta">
+        <div>
+          <span class="section-kicker">FOR REMIX LOVERS</span>
+          <h2>Your Song. Your Style.</h2>
+          <p>Pilih style remix yang kamu suka, lalu request lagunya, dan biar kami yang bikin versinya.</p>
+        </div>
+        <button class="btn btn-primary" id="sellBtn">Explore Remix <span>→</span></button>
+      </section>
+    </main>
+
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <a class="brand" href="#marketplace">
+            <span class="brand-mark">FS</span>
+            <span class="brand-name">Felik Fvnky Store</span>
+          </a>
+          <p>Koleksi untuk remix dan FL Studio project. Temukan project siap pakai untuk produksi musikmu.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong>Koleksi</strong>
+            <a href="#products">Remix</a>
+            <a href="#products">FL Studio Project</a>
+            <a href="#categories">Kategori</a>
+          </div>
+          <div>
+            <strong>Temui kami</strong>
+            <a href="https://instagram.com/pelikpungky" target="_blank" rel="noopener">Instagram · @pelikpungky</a>
+            <a href="https://instagram.com/galihchyo_" target="_blank" rel="noopener">Instagram · @galihchyo_</a>
+            <a href="https://tiktok.com/@fxofficialrmx" target="_blank" rel="noopener">TikTok · @fxofficial</a>
+            <a href="https://wa.me/6281230467508" target="_blank" rel="noopener">WhatsApp · Contact</a>
+          </div>
+          <div>
+            <strong>Support</strong>
+            <a href="mailto:hello@felix-store.com">Email support</a>
+            <a href="#marketplace">Cara pembelian</a>
+            <a href="#marketplace">FAQ</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Felik Fvnky Store. All rights reserved.</span>
+          <span>Built for music creators.</span>
+        </div>
+      </footer>
+
+    <nav class="mobile-nav" aria-label="Navigasi mobile">
+      <a class="active" href="#marketplace"><span>⌂</span>Home</a>
+      <a href="#products"><span>◈</span>Products</a>
+      <button id="mobileCartBtn"><span>🛒<b id="mobileCartCount">0</b></span>Order</button>
+      <button id="mobileProfileBtn"><span>◉</span>Account</button>
+    </nav>
+  </div>
+
+  <div class="overlay hidden" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Keranjang">
+    <div class="drawer-head">
+      <div><span class="section-kicker">Your order</span><h2>Keranjang</h2></div>
+      <button class="close-btn" data-close>×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom">
+      <div class="cart-line"><span>Subtotal</span><strong id="cartSubtotal">Rp0</strong></div>
+      <div class="cart-line small"><span>Biaya platform</span><span id="platformFee">Rp0</span></div>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+      <button class="btn btn-primary full" id="checkoutBtn">Pesan dari keranjang <span>→</span></button>
+      <small>Untuk pembelian dari keranjang, lanjutkan ke pembayaran lalu konfirmasi melalui WhatsApp.</small>
+    </div>
+  </aside>
+
+  <div class="modal hidden" id="productModal">
+    <div class="modal-card product-modal-card">
+      <button class="close-btn modal-close" data-close>×</button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="checkoutModal">
+    <div class="modal-card checkout-card">
+      <button class="close-btn modal-close" data-close>×</button>
+      <span class="section-kicker">PESAN SEKARANG</span>
+      <h2>Pembayaran pesanan</h2>
+      <p class="muted">Lengkapi data, pilih metode pembayaran, lalu lakukan pembayaran. Setelah itu klik tombol konfirmasi untuk melanjutkan ke WhatsApp.</p>
+
+      <div id="checkoutSummary"></div>
+
+      <div class="payment-box">
+        <div class="payment-box-head">
+          <strong>Instruksi pembayaran</strong>
+          <span id="checkoutTotal">Rp0</span>
+        </div>
+        <div id="paymentInstruction" class="payment-instruction"></div>
+      </div>
+
+      <form id="checkoutForm">
+        <label>Nama
+          <input required name="name" placeholder="Nama lengkap">
+        </label>
+        <label>Nomor WhatsApp
+          <input required name="phone" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx">
+        </label>
+        <label>Metode pembayaran
+          <select name="payment" id="paymentMethod">
+            <option>QRIS</option>
+            <option>Bank Transfer</option>
+            <option>E-Wallet</option>
+          </select>
+        </label>
+        <label>Catatan <span class="optional">(opsional)</span>
+          <textarea name="note" rows="3" placeholder="Contoh: FLP - sudah transfer via DANA / Remix - Style Party, judul lagu: DJ X - Lagu dari..."></textarea>
+        </label>
+        <button class="btn btn-primary full" type="submit">Saya sudah bayar · Konfirmasi via WhatsApp <span>→</span></button>
+        <small class="checkout-note">Pastikan kamu sudah melakukan pembayaran sesuai metode di atas. WhatsApp hanya digunakan untuk mengirim konfirmasi dan bukti pembayaran.</small>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="howModal">
+    <div class="modal-card">
+      <button class="close-btn modal-close" data-close>×</button>
+      <span class="section-kicker">Simple flow</span>
+      <h2>Belanja tanpa ribet</h2>
+      <div class="steps">
+        <div><b>01</b><div><strong>Pilih produk</strong><p>Preview audio, cek detail, style, FLP.</p></div></div>
+        <div><b>02</b><div><strong>Masukkan keranjang</strong><p>Kamu bisa mengumpulkan beberapa product sekaligus.</p></div></div>
+        <div><b>03</b><div><strong>Checkout</strong><p>Bayar lewat pembayaran pilihanmu lalu konfirmasi pembayaran via WhatsApp, dan pesanan diproses..</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="profileModal">
+    <div class="modal-card">
+      <button class="close-btn modal-close" data-close>×</button>
+      <span class="section-kicker">Account</span>
+      <h2>Area member</h2>
+      <p class="muted">Login/register soon</p>
+      <button class="btn btn-primary full" data-close>Login / Register</button>
+    </div>
+  </div>
+
+  <div class="audio-dock" id="audioDock" aria-label="Pemutar preview audio">
+    <div class="audio-dock-inner">
+      <div class="audio-dock-thumb" id="audioDockThumb"><div><small>FELIK FVNKY STORE</small>FELIK FVNKY STORE</div></div>
+      <div class="audio-dock-main">
+        <div class="audio-dock-top">
+          <strong id="audioDockTitle">Preview audio</strong>
+          <span><span id="audioDockCurrent">0:00</span> / <span id="audioDockDuration">0:00</span></span>
+        </div>
+        <div class="audio-dock-track" id="audioDockTrack" role="slider" aria-label="Progress audio">
+          <span id="audioDockFill"></span>
+        </div>
+      </div>
+      <button class="audio-dock-play" id="audioDockPlay" type="button" aria-label="Putar atau jeda">▶</button>
+    </div>
+    <audio id="audioDockAudio" preload="metadata"></audio>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
