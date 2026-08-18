@@ -24,7 +24,7 @@ let state = {
   search:"",
   category:"all",
   sort:"popular",
-  maxPrice:500000,
+  maxPrice:700000,
   cart:JSON.parse(localStorage.getItem("felix-store-cart") || "[]"),
   favorites:JSON.parse(localStorage.getItem("felix-store-favorites") || "[]"),
   types:[],
@@ -503,7 +503,7 @@ $("#openSearchBtn").addEventListener("click",()=>{$("#searchInput").focus();wind
 $("#allCategoriesBtn").addEventListener("click",()=>{state.category="all";renderCategories();renderProducts();$("#products").scrollIntoView({behavior:"smooth"})});
 $("#featuredBtn").addEventListener("click",()=>{state.sort="rating";$("#sortSelect").value="rating";renderProducts();$("#products").scrollIntoView({behavior:"smooth"})});
 $("#filterBtn").addEventListener("click",()=>$("#filterPanel").classList.toggle("open"));
-$("#clearFiltersBtn").addEventListener("click",()=>{state.types=[];state.genres=[];state.maxPrice=500000;$("#priceRange").value=500000;$("#priceValue").textContent=rupiah(500000);$$(".type-filter,.genre-filter").forEach(x=>x.checked=false);renderProducts()});
+$("#clearFiltersBtn").addEventListener("click",()=>{state.types=[];state.genres=[];state.maxPrice=700000;$("#priceRange").value=700000;$("#priceValue").textContent=rupiah(700000);$$(".type-filter,.genre-filter").forEach(x=>x.checked=false);renderProducts()});
 $("#resetSearchBtn").addEventListener("click",()=>{state.search="";$("#searchInput").value="";state.category="all";renderCategories();renderProducts()});
 $("#sortSelect").addEventListener("change",e=>{state.sort=e.target.value;renderProducts()});
 $("#priceRange").addEventListener("input",e=>{state.maxPrice=Number(e.target.value);$("#priceValue").textContent=rupiah(state.maxPrice);renderProducts()});
