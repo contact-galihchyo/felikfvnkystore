@@ -11,7 +11,7 @@ const products = [
   {id:10, title:"BBHC", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"bbhc", genreLabel:"BBHC", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style BBHC.", license:"", previewUrl:"assets/audio/product-10.mp3"},
   {id:11, title:"JJ Velocity", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jjvelocity", genreLabel:"JJ Velocity", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style JJ Velocity.", license:"", previewUrl:"assets/audio/product-11.mp3"},
   {id:12, title:"Custom Style", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"custom", genreLabel:"Custom", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Untuk Custum Style/Req Style silahkan cekout terlebih dahulu, untuk konsep style dan harga bisa di konsultasikan via Whatsapp ", license:"", previewUrl:"assets/audio/product-12.mp3"},
-  {id:12, title:"Breakbet Clasic", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"breakbeatclasic", genreLabel:"Breakbeat Clasic", price:700000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Breakbeat Clasic", license:"", previewUrl:"assets/audio/product-13.mp3"},
+  {id:13, title:"Breakbet Clasic", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"breakbeatclasic", genreLabel:"Breakbeat Clasic", price:700000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Breakbeat Clasic", license:"", previewUrl:"assets/audio/product-13.mp3"},
 ];
 
 const categories = [
