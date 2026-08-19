@@ -20,9 +20,12 @@
       </a>
 
       <nav class="desktop-nav" aria-label="Navigasi utama">
-        <a href="#marketplace">Koleksi</a>
+        <a class="active" href="#marketplace">Beranda</a>
+        <a href="#products">Koleksi</a>
         <a href="#categories">Kategori</a>
         <a href="#featured">Featured</a>
+        <button type="button" id="howItWorksNav">Cara Belanja</button>
+        <a href="#licenses">Lisensi</a>
       </nav>
 
       <div class="top-actions">
@@ -134,7 +137,7 @@
         </div>
       </section>
 
-      <section class="seller-cta">
+      <section class="seller-cta" id="licenses">
         <div>
           <span class="section-kicker">FOR REMIX LOVERS</span>
           <h2>Your Song. Your Style.</h2>
@@ -146,32 +149,47 @@
 
 
       <footer class="site-footer">
-        <div class="footer-brand">
-          <a class="brand" href="#marketplace">
-            <span class="brand-mark">FS</span>
-            <span class="brand-name">Felik Fvnky Store</span>
-          </a>
-          <p>Koleksi untuk remix dan FL Studio project. Temukan project siap pakai untuk produksi musikmu.</p>
-        </div>
-        <div class="footer-links">
-          <div>
-            <strong>Koleksi</strong>
-            <a href="#products">Remix</a>
-            <a href="#products">FL Studio Project</a>
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a class="brand" href="#marketplace">
+              <span class="brand-mark">FS</span>
+              <span class="brand-name">Felik Fvnky Store</span>
+            </a>
+            <p>Marketplace khusus remix dan FL Studio project berkualitas untuk producer Indonesia.</p>
+            <div class="payment-logos" aria-label="Metode pembayaran">
+              <span class="pay-dana">DANA</span>
+              <span class="pay-qris">QRIS</span>
+              <span class="pay-ovo">OVO</span>
+              <span class="pay-gopay">gopay</span>
+              <span class="pay-shopee">ShopeePay</span>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <strong>Menu</strong>
+            <a href="#marketplace">Beranda</a>
+            <a href="#products">Koleksi</a>
             <a href="#categories">Kategori</a>
+            <a href="#featured">Featured</a>
+            <button type="button" id="howItWorksFooter">Cara Belanja</button>
+            <a href="#licenses">Lisensi</a>
           </div>
-          <div>
-            <strong>Temui kami</strong>
-            <a href="https://instagram.com/pelikpungky" target="_blank" rel="noopener">Instagram · @pelikpungky</a>
-            <a href="https://instagram.com/galihchyo_" target="_blank" rel="noopener">Instagram · @galihchyo_</a>
-            <a href="https://tiktok.com/@fxofficialrmx" target="_blank" rel="noopener">TikTok · @fxofficial</a>
-            <a href="https://wa.me/6281230467508" target="_blank" rel="noopener">WhatsApp · Contact</a>
-          </div>
-          <div>
-            <strong>Support</strong>
-            <a href="mailto:hello@felix-store.com">Email support</a>
-            <a href="#marketplace">Cara pembelian</a>
+
+          <div class="footer-column">
+            <strong>Bantuan</strong>
             <a href="#marketplace">FAQ</a>
+            <a href="#marketplace">Syarat &amp; Ketentuan</a>
+            <a href="#marketplace">Kebijakan Privasi</a>
+            <a href="#marketplace">Refund Policy</a>
+            <a href="mailto:hello@felix-store.com">Hubungi Kami</a>
+          </div>
+
+          <div class="footer-column footer-contact">
+            <strong>Temui kami</strong>
+            <a href="https://instagram.com/pelikpungky" target="_blank" rel="noopener"><span class="contact-icon">◎</span>Instagram · @pelikpungky</a>
+            <a href="https://tiktok.com/@fxofficialrmx" target="_blank" rel="noopener"><span class="contact-icon">♪</span>TikTok · @fxofficial</a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener"><span class="contact-icon">◌</span>WhatsApp · 0812-3456-7890</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Felik+Fvnky+Store" target="_blank" rel="noopener"><span class="contact-icon">⌖</span>Lokasi · Felik Fvnky Store</a>
           </div>
         </div>
         <div class="footer-bottom">
@@ -180,10 +198,25 @@
         </div>
       </footer>
 
+    <button class="consult-float" id="consultFloat" type="button" aria-label="Konsultasi cepat via Discord" title="Konsultasi cepat via Discord">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.3 7.2A7.8 7.8 0 0 1 16.7 7.2c1.2 1.7 1.8 3.7 1.8 5.8 0 2.7-1.2 5.1-3.3 6.7l-1.5-1.5c.6-.3 1.1-.8 1.5-1.3-2.2 1-4.6 1.5-7.2 1.5s-5-.5-7.2-1.5c.4.5.9 1 1.5 1.3l-1.5 1.5C-.8 18.1-2 15.7-2 13c0-2.1.6-4.1 1.8-5.8A7.8 7.8 0 0 1 7.3 7.2Z" transform="translate(3 0)"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/></svg>
+    </button>
+    <div class="consult-modal hidden" id="consultModal" role="dialog" aria-modal="true" aria-labelledby="consultTitle">
+      <div class="consult-card">
+        <button class="close-btn consult-close" id="consultClose" type="button" aria-label="Tutup">×</button>
+        <span class="section-kicker">SUPPORT</span>
+        <h2 id="consultTitle">Konsultasi Cepat</h2>
+        <p class="muted">Butuh bantuan pilih style, request remix, atau FLP? Lanjutkan konsultasi langsung melalui Discord.</p>
+        <button class="btn btn-primary full" id="discordBtn" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.3 7.2A7.8 7.8 0 0 1 16.7 7.2c1.2 1.7 1.8 3.7 1.8 5.8 0 2.7-1.2 5.1-3.3 6.7l-1.5-1.5c.6-.3 1.1-.8 1.5-1.3-2.2 1-4.6 1.5-7.2 1.5s-5-.5-7.2-1.5c.4.5.9 1 1.5 1.3l-1.5 1.5C-.8 18.1-2 15.7-2 13c0-2.1.6-4.1 1.8-5.8A7.8 7.8 0 0 1 7.3 7.2Z" transform="translate(3 0)"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/></svg>
+          Buka Discord
+        </button>
+      </div>
+    </div>
     <nav class="mobile-nav" aria-label="Navigasi mobile">
       <a class="active" href="#marketplace"><span>⌂</span>Home</a>
       <a href="#products"><span>◈</span>Products</a>
-      <button id="mobileCartBtn"><span>🛒<b id="mobileCartCount">0</b></span>Order</button>
+      <button id="mobileCartBtn"><span class="mobile-cart-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.95-1.55L20.5 8H6M10 20a1 1 0 1 1-2 0m10 0a1 1 0 1 1-2 0"/></svg><b id="mobileCartCount">0</b></span>Order</button>
       <button id="mobileProfileBtn"><span>◉</span>Account</button>
     </nav>
   </div>
@@ -198,7 +231,6 @@
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-bottom">
       <div class="cart-line"><span>Subtotal</span><strong id="cartSubtotal">Rp0</strong></div>
-      <div class="cart-line small"><span>Biaya platform</span><span id="platformFee">Rp0</span></div>
       <div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
       <button class="btn btn-primary full" id="checkoutBtn">Pesan dari keranjang <span>→</span></button>
       <small>Untuk pembelian dari keranjang, lanjutkan ke pembayaran lalu konfirmasi melalui WhatsApp.</small>
@@ -236,15 +268,18 @@
         <label>Nomor WhatsApp
           <input required name="phone" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx">
         </label>
+        <label>Request Inisial <span class="optional">(opsional)</span>
+          <input name="initials" maxlength="20" placeholder="Contoh: GC / FX / sesuai request">
+        </label>
         <label>Metode pembayaran
           <select name="payment" id="paymentMethod">
+            <option>DANA</option>
             <option>QRIS</option>
             <option>Bank Transfer</option>
-            <option>E-Wallet</option>
           </select>
         </label>
         <label>Catatan <span class="optional">(opsional)</span>
-          <textarea name="note" rows="3" placeholder="Contoh: FLP - sudah transfer via DANA / Remix - Style Party, judul lagu.... - inisial isi disini....."></textarea>
+          <textarea name="note" rows="3" placeholder="Contoh: FLP - sudah transfer via DANA / Remix - Style Party, judul lagu: DJ X - Lagu dari..."></textarea>
         </label>
         <button class="btn btn-primary full" type="submit">Saya sudah bayar · Konfirmasi via WhatsApp <span>→</span></button>
         <small class="checkout-note">Pastikan kamu sudah melakukan pembayaran sesuai metode di atas. WhatsApp hanya digunakan untuk mengirim konfirmasi dan bukti pembayaran.</small>
@@ -287,12 +322,16 @@
           <span id="audioDockFill"></span>
         </div>
       </div>
-      <button class="audio-dock-play" id="audioDockPlay" type="button" aria-label="Putar atau jeda">▶</button>
+      <button class="audio-dock-play" id="audioDockPlay" type="button" aria-label="Putar atau jeda">
+        <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5L8 5.5Z"/></svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+      </button>
     </div>
     <audio id="audioDockAudio" preload="metadata"></audio>
   </div>
 
   <div class="toast" id="toast"></div>
+  <script src="music.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

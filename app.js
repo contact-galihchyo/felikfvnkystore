@@ -1,17 +1,17 @@
 const products = [
-  {id:1, title:"Party Biasa", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partybiasa", genreLabel:"Party Biasa", price:185000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Party Biasa.", license:"", previewUrl:"assets/audio/product-1.mp3"},
-  {id:2, title:"Party Req", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partyreq", genreLabel:"Party Req", price:200000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Req.", license:"", previewUrl:"assets/audio/product-2.mp3"},
-  {id:3, title:"Party Jungle Dutch", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jungledutch", genreLabel:"Jungle Dutch", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Jungle Dutch.", license:"", previewUrl:"assets/audio/product-3.mp3"},
-  {id:4, title:"Jengat", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jengat", genreLabel:"Jengat", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Jengat.", license:"", previewUrl:"assets/audio/product-4.mp3"},
-  {id:5, title:"Funkot Horeg", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"funkothoreg", genreLabel:"Funkot Horeg", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Funkot Horeg.", license:"", previewUrl:"assets/audio/product-5.mp3"},
-  {id:6, title:"Funkot Original", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"funkot", genreLabel:"Funkot", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Funkot Original.", license:"", previewUrl:"assets/audio/product-6.mp3"},
-  {id:7, title:"Trap", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"trap", genreLabel:"Trap", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Trap.", license:"", previewUrl:"assets/audio/product-7.mp3"},
-  {id:8, title:"Trap Party", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"trapparty", genreLabel:"Trap Party", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Trap Party.", license:"", previewUrl:"assets/audio/product-8.mp3"},
-  {id:9, title:"Trap Battle", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"trapbattle", genreLabel:"Trap Battle", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Trap Battle.", license:"", previewUrl:"assets/audio/product-9.mp3"},
-  {id:10, title:"BBHC", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"bbhc", genreLabel:"BBHC", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style BBHC.", license:"", previewUrl:"assets/audio/product-10.mp3"},
-  {id:11, title:"JJ Velocity", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jjvelocity", genreLabel:"JJ Velocity", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style JJ Velocity.", license:"", previewUrl:"assets/audio/product-11.mp3"},
-  {id:12, title:"Custom Style", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"custom", genreLabel:"Custom", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Untuk Custum Style/Req Style silahkan cekout terlebih dahulu, untuk konsep style dan harga bisa di konsultasikan via Whatsapp ", license:"", previewUrl:"assets/audio/product-12.mp3"},
-  {id:13, title:"Breakbet Clasic", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"breakbeatclasic", genreLabel:"Breakbeat Clasic", price:700000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Breakbeat Clasic", license:"", previewUrl:"assets/audio/product-13.mp3"},
+  {id:1, title:"Party Biasa", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partybiasa", genreLabel:"Party Biasa", price:185000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Party Biasa.", license:""},
+  {id:2, title:"Party Req", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partyreq", genreLabel:"Party Req", price:200000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Req.", license:""},
+  {id:3, title:"Party Jungle Dutch", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jungledutch", genreLabel:"Jungle Dutch", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Jungle Dutch.", license:""},
+  {id:4, title:"Jengat", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jengat", genreLabel:"Jengat", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Jengat.", license:""},
+  {id:5, title:"Funkot Horeg", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"funkothoreg", genreLabel:"Funkot Horeg", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Funkot Horeg.", license:""},
+  {id:6, title:"Funkot Original", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"funkot", genreLabel:"Funkot", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Funkot Original.", license:""},
+  {id:7, title:"Trap", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"trap", genreLabel:"Trap", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Trap.", license:""},
+  {id:8, title:"Trap Party", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"trapparty", genreLabel:"Trap Party", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Trap Party.", license:""},
+  {id:9, title:"Trap Battle", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"trapbattle", genreLabel:"Trap Battle", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Trap Battle.", license:""},
+  {id:10, title:"BBHC", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"bbhc", genreLabel:"BBHC", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style BBHC.", license:""},
+  {id:11, title:"JJ Velocity", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jjvelocity", genreLabel:"JJ Velocity", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style JJ Velocity.", license:""},
+  {id:12, title:"Custom Style", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"custom", genreLabel:"Custom", price:500000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Untuk Custum Style/Req Style silahkan cekout terlebih dahulu, untuk konsep style dan harga bisa di konsultasikan via Whatsapp ", license:""},
+  {id:13, title:"Breakbet Clasic", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"breakbeatclasic", genreLabel:"Breakbeat Clasic", price:700000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Breakbeat Clasic", license:""},
 ];
 
 const categories = [
@@ -44,7 +44,7 @@ function save(){
 function coverMarkup(p, large=false){
   return `<div class="${large?'detail-cover':'cover'}">
     <div class="cover-art"><div class="cover-brand"><small>FELIK FVNKY</small><span>Felik Fvnky</span> <b>Store</b></div></div>
-    ${!large ? `<div class="cover-badges"><span class="type-badge">${p.typeLabel}</span><button class="fav ${state.favorites.includes(p.id)?'active':''}" data-fav="${p.id}" aria-label="Favorit">${state.favorites.includes(p.id)?"♥":"♡"}</button></div><button class="play-preview" data-preview="${p.id}" aria-label="Preview">▶</button>`:""}
+    ${!large ? `<div class="cover-badges"><span class="type-badge">${p.typeLabel}</span><button class="fav ${state.favorites.includes(p.id)?'active':''}" data-fav="${p.id}" aria-label="Favorit">${state.favorites.includes(p.id)?"♥":"♡"}</button></div><button class="play-preview" data-preview="${p.id}" aria-label="Preview">${playIcon()}</button>`:""}
   </div>`;
 }
 
@@ -99,7 +99,7 @@ function productCard(p){
       <div class="product-foot">
       <strong class="price ${p.price===0?'free':''}">${p.price===0?"FREE":rupiah(p.price)}</strong>
       <div class="product-actions">
-        <button class="add-btn cart-add-btn" type="button" data-add="${p.id}" title="Masukkan ke keranjang">🛒</button>
+        <button class="add-btn cart-add-btn" type="button" data-add="${p.id}" title="Masukkan ke keranjang" aria-label="Masukkan ke keranjang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.95-1.55L20.5 8H6M10 20a1 1 0 1 1-2 0m10 0a1 1 0 1 1-2 0"/></svg></button>
         <button class="add-btn order-btn" type="button" data-order="${p.id}">Pesan Sekarang</button>
       </div>
     </div>
@@ -134,8 +134,8 @@ function renderCart(){
       <div><h4>${escapeHtml(p.title)}</h4><p>${escapeHtml(p.typeLabel)}</p><strong>${rupiah(p.price)}</strong></div>
       <button class="remove-item" data-remove="${p.id}">Hapus</button>
     </div>`).join("") : `<div class="empty-state" style="padding:60px 10px;border:0"><div class="empty-icon">🛒</div><h3>Keranjang masih kosong</h3><p>Preview produk yang kamu suka lalu tambahkan ke sini.</p></div>`;
-  const subtotal=items.reduce((s,p)=>s+p.price,0), fee=items.length?Math.round(subtotal*.025):0;
-  $("#cartSubtotal").textContent=rupiah(subtotal);$("#platformFee").textContent=rupiah(fee);$("#cartTotal").textContent=rupiah(subtotal+fee);
+  const subtotal=items.reduce((s,p)=>s+p.price,0);
+  $("#cartSubtotal").textContent=rupiah(subtotal);$("#cartTotal").textContent=rupiah(subtotal);
 }
 
 function openLayer(el){
@@ -178,8 +178,7 @@ function showCartCheckout(){
 
 function showCheckoutItems(items){
   const subtotal = items.reduce((sum,p)=>sum+p.price,0);
-  const fee = Math.round(subtotal * 0.025);
-  const total = subtotal + fee;
+  const total = subtotal;
 
   $("#checkoutSummary").innerHTML = items.map(p => `
     <div class="checkout-product">
@@ -192,14 +191,13 @@ function showCheckoutItems(items){
     </div>`).join("") + `
     <div class="checkout-summary">
       <div><span>${items.length} produk</span><strong>${rupiah(subtotal)}</strong></div>
-      <div><span>Biaya layanan</span><strong>${rupiah(fee)}</strong></div>
       <div class="checkout-total-row"><span>Total pembayaran</span><strong>${rupiah(total)}</strong></div>
     </div>`;
 
   $("#checkoutForm").dataset.productIds = items.map(p=>p.id).join(",");
-  $("#paymentInstruction").innerHTML = getPaymentInstruction("QRIS", total);
+  $("#paymentInstruction").innerHTML = getPaymentInstruction("DANA", total);
   $("#checkoutTotal").textContent = rupiah(total);
-  $("#paymentMethod").value = "QRIS";
+  $("#paymentMethod").value = "DANA";
 
   closeAll();
   openLayer($("#checkoutModal"));
@@ -207,6 +205,19 @@ function showCheckoutItems(items){
 
 function getPaymentInstruction(method, total){
   const details = {
+    "DANA": `
+      <div class="payment-detail-card payment-dana-card">
+        <div class="payment-method-heading"><span class="payment-logo">D</span><div><strong>Bayar melalui DANA</strong><small>Metode utama</small></div></div>
+        <p>Kirim tepat <b>${rupiah(total)}</b> ke akun DANA berikut:</p>
+        <div class="payment-account-row">
+          <div class="payment-account-info">
+            <b>${escapeHtml(PAYMENT_DETAILS.dana)}</b>
+          </div>
+          <button type="button" class="copy-account-btn" data-copy-payment="${PAYMENT_DETAILS.danaNumber}">Salin Nomor DANA</button>
+        </div>
+        <small>Setelah pembayaran berhasil, simpan bukti pembayaran. Baru klik tombol konfirmasi WhatsApp.</small>
+      </div>`,
+
     "QRIS": `
       <div class="payment-detail-card">
         <strong>Bayar melalui QRIS</strong>
@@ -247,22 +258,33 @@ const PAYMENT_DETAILS = {
   qris: "assets/qris.png",
   bank: "Bank Jago 104468999416 a.n. FELIX FULVIAN ALFARIZI",
   bankNumber: "104468999416",
+  dana: "DANA 082132334130 a.n. FELIX FULVIAN ALFARIZI",
+  danaNumber: "082132334130",
   ewallet: "DANA 082132334130 a.n. FELIX FULVIAN ALFARIZI",
   ewalletNumber: "082132334130"
 };
+const DISCORD_URL = "https://discord.gg/aBFK5ZNw7h";
 
 function buildWhatsAppMessage(items, customer, payment, note, total){
+  const now = new Date();
+  const dateTime = new Intl.DateTimeFormat("id-ID", {
+    timeZone: "Asia/Jakarta",
+    day: "2-digit", month: "long", year: "numeric",
+    hour: "2-digit", minute: "2-digit", second: "2-digit",
+    hour12: false
+  }).format(now).replace(",", " ·");
   const lines = [
     "Halo Felik Fvnky Store, saya ingin mengonfirmasi pesanan:",
     "",
+    `📅 Waktu order: ${dateTime} WIB`,
     ...items.map((p,i)=>`${i+1}. ${p.title} — ${rupiah(p.price)}`),
     "",
-    `🧾 Biaya layanan: ${rupiah(Math.round(items.reduce((s,p)=>s+p.price,0)*0.025))}`,
     `💳 Total: ${rupiah(total)}`,
     `💰 Metode pembayaran: ${payment}`,
     "",
     `👤 Nama: ${customer.name}`,
     `📱 WhatsApp: ${customer.phone}`,
+    `🔤 Request Inisial: ${customer.initials || "-"}`,
     `📝 Catatan: ${note || "-"}`,
     "",
     "Saya sudah menyelesaikan pembayaran dan siap mengirim bukti pembayaran.",
@@ -280,12 +302,13 @@ function openWhatsAppOrder(){
   const data = new FormData(form);
   const name = String(data.get("name") || "").trim();
   const phone = String(data.get("phone") || "").trim();
-  const payment = String(data.get("payment") || "QRIS");
+  const initials = String(data.get("initials") || "").trim();
+  const payment = String(data.get("payment") || "DANA");
   const note = String(data.get("note") || "").trim();
   if(!name || !phone){ form.reportValidity(); return; }
 
   const subtotal = items.reduce((s,p)=>s+p.price,0);
-  const total = subtotal + Math.round(subtotal*0.025);
+  const total = subtotal;
   const message = buildWhatsAppMessage(items, {name, phone}, payment, note, total);
   const url = `https://wa.me/${PAYMENT_DETAILS.whatsapp}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank", "noopener,noreferrer");
@@ -331,10 +354,10 @@ function stopPreview(){
     try{player.pause();player.currentTime=0;}catch(e){}
   }
   window.previewAudio=null;
-  $$(".play-preview").forEach(b=>{b.dataset.playing="0";b.textContent="▶";});
+  $$(".play-preview").forEach(b=>{b.dataset.playing="0";b.innerHTML=playIcon();});
   const ui=$("#audioDock");
   const dockPlay=$("#audioDockPlay");
-  if(dockPlay) dockPlay.textContent="▶";
+  if(dockPlay) dockPlay.innerHTML=playIcon();
   if(ui) ui.classList.remove("show");
 }
 
@@ -356,19 +379,27 @@ function updateAudioDock(){
   if(duration) duration.textContent=formatTime(player.duration);
 }
 
+function playIcon(){
+  return `<svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5L8 5.5Z"/></svg>`;
+}
+function pauseIcon(){
+  return `<svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>`;
+}
+
 function preview(id,button){
   const p=products.find(x=>x.id===id); if(!p)return;
   if(button.dataset.playing==="1" && window.previewAudio){
     if(window.previewAudio.paused){
       window.previewAudio.play().catch(()=>{});
-      button.textContent="⏸";
+      button.innerHTML=pauseIcon();
     }else{
       window.previewAudio.pause();
-      button.textContent="▶";
+      button.innerHTML=playIcon();
     }
     return;
   }
-  if(!p.previewUrl){
+  const previewUrl = window.MUSIC_LINKS?.[p.id];
+  if(!previewUrl){
     toast("Preview audio produk ini belum tersedia.");
     return;
   }
@@ -378,7 +409,7 @@ function preview(id,button){
   const ui=$("#audioDock");
   if(!player || !ui)return;
 
-  player.src=p.previewUrl;
+  player.src=previewUrl;
   player.currentTime=0;
   player.volume=.85;
   window.previewAudio=player;
@@ -388,26 +419,26 @@ function preview(id,button){
   $("#audioDockCurrent").textContent="0:00";
   $("#audioDockDuration").textContent="0:00";
   $("#audioDockFill").style.width="0%";
-  $("#audioDockPlay").textContent="▶";
+  $("#audioDockPlay").innerHTML=playIcon();
   ui.classList.add("show");
   button.dataset.playing="1";
-  button.textContent="⏸";
+  button.innerHTML=pauseIcon();
 
   player.onloadedmetadata=updateAudioDock;
   player.ontimeupdate=updateAudioDock;
   player.onplay=()=>{
-    $("#audioDockPlay").textContent="⏸";
+    $("#audioDockPlay").innerHTML=pauseIcon();
     const active=$$(".play-preview").find(b=>b.dataset.playing==="1");
-    if(active) active.textContent="⏸";
+    if(active) active.innerHTML=pauseIcon();
   };
   player.onpause=()=>{
-    $("#audioDockPlay").textContent="▶";
+    $("#audioDockPlay").innerHTML=playIcon();
     const active=$$(".play-preview").find(b=>b.dataset.playing==="1");
-    if(active) active.textContent="▶";
+    if(active) active.innerHTML=playIcon();
   };
   player.onended=()=>{
-    $$(".play-preview").forEach(b=>{b.dataset.playing="0";b.textContent="▶";});
-    $("#audioDockPlay").textContent="▶";
+    $$(".play-preview").forEach(b=>{b.dataset.playing="0";b.innerHTML=playIcon();});
+    $("#audioDockPlay").innerHTML=playIcon();
     updateAudioDock();
   };
   player.onerror=()=>{
@@ -468,14 +499,14 @@ document.addEventListener("click",e=>{
     if(!player)return;
     if(player.paused){
       player.play().catch(()=>{});
-      dockPlay.textContent="⏸";
+      dockPlay.innerHTML=pauseIcon();
       const active=$$(".play-preview").find(b=>b.dataset.playing==="1");
-      if(active)active.textContent="⏸";
+      if(active)active.innerHTML=pauseIcon();
     }else{
       player.pause();
-      dockPlay.textContent="▶";
+      dockPlay.innerHTML=playIcon();
       const active=$$(".play-preview").find(b=>b.dataset.playing==="1");
-      if(active)active.textContent="▶";
+      if(active)active.innerHTML=playIcon();
     }
     return;
   }
@@ -497,6 +528,8 @@ $("#mobileCartBtn").addEventListener("click",openCart);
 $("#profileBtn").addEventListener("click",()=>openLayer($("#profileModal")));
 $("#mobileProfileBtn").addEventListener("click",()=>openLayer($("#profileModal")));
 $("#howItWorksBtn").addEventListener("click",()=>openLayer($("#howModal")));
+$("#howItWorksNav")?.addEventListener("click",()=>openLayer($("#howModal")));
+$("#howItWorksFooter")?.addEventListener("click",()=>openLayer($("#howModal")));
 $("#checkoutBtn").addEventListener("click",showCartCheckout);
 $("#sellBtn").addEventListener("click",()=>toast("Halaman seller siap dihubungkan ke upload/backend."));
 $("#openSearchBtn").addEventListener("click",()=>{$("#searchInput").focus();window.scrollTo({top:0,behavior:"smooth"})});
@@ -533,8 +566,27 @@ $("#paymentMethod").addEventListener("change", e=>{
   const items = ids.map(id=>products.find(p=>p.id===id)).filter(Boolean);
   if(!items.length)return;
   const subtotal = items.reduce((s,p)=>s+p.price,0);
-  const total = subtotal + Math.round(subtotal * 0.025);
+  const total = subtotal;
   $("#paymentInstruction").innerHTML = getPaymentInstruction(e.target.value, total);
 });
+
+
+
+const consultFloat = $("#consultFloat");
+const consultModal = $("#consultModal");
+const discordBtn = $("#discordBtn");
+const consultClose = $("#consultClose");
+if(consultFloat && consultModal){
+  consultFloat.addEventListener("click",()=>consultModal.classList.remove("hidden"));
+}
+if(consultClose && consultModal){
+  consultClose.addEventListener("click",()=>consultModal.classList.add("hidden"));
+}
+if(discordBtn){
+  discordBtn.addEventListener("click",()=>window.open(DISCORD_URL,"_blank","noopener,noreferrer"));
+}
+if(consultModal){
+  consultModal.addEventListener("click",e=>{if(e.target===consultModal)consultModal.classList.add("hidden")});
+}
 
 renderCategories();renderProducts();renderCart();

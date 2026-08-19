@@ -72,3 +72,7 @@ Felik Fvnky Store memakai tema orange editorial/dark yang berbeda dari referensi
 Tombol produk sekarang membuka halaman pembayaran terlebih dahulu. Setelah data pelanggan dan metode pembayaran diisi, tombol **Konfirmasi via WhatsApp** membuka WhatsApp dengan pesan otomatis berisi produk, harga, biaya layanan, total, dan data pelanggan.
 
 Sebelum digunakan, ubah `PAYMENT_DETAILS.whatsapp` di `app.js` menjadi nomor WhatsApp toko yang sebenarnya. Detail rekening/e-wallet/QRIS juga dapat diubah di objek `PAYMENT_DETAILS`.
+
+
+## Audio Preview
+Semua link preview audio disimpan di `music.js` melalui `window.MUSIC_LINKS`. Tidak ada file MP3 lokal yang digunakan.
