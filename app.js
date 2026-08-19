@@ -1,6 +1,6 @@
 const products = [
   {id:1, title:"Party Biasa", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partybiasa", genreLabel:"Party Biasa", price:185000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Party Biasa.", license:""},
-  {id:2, title:"Party Req", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partyreq", genreLabel:"Party Req", price:200000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Req.", license:""},
+  {id:2, title:"Party Request", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"partyreq", genreLabel:"Party Req", price:200000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Req.", license:""},
   {id:3, title:"Party Jungle Dutch", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jungledutch", genreLabel:"Jungle Dutch", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Party Jungle Dutch.", license:""},
   {id:4, title:"Jengat", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"jengat", genreLabel:"Jengat", price:300000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:false, desc:"Style Jengat.", license:""},
   {id:5, title:"Funkot Horeg", creator:"FX Official", type:"remix", typeLabel:"REMIX", genre:"funkothoreg", genreLabel:"Funkot Horeg", price:350000, rating:5.0, sales:0, bpm:"", key:"", date:"2026-08-18", featured:true, desc:"Style Funkot Horeg.", license:""},
