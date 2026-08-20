@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020814">
+  <title>Admin — Felik Fvnky Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body.admin-page{min-height:100vh;background:#020814;color:#eef5ff}.admin-wrap{width:min(1320px,92%);margin:0 auto;padding:28px 0 50px}.admin-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:28px}.admin-top .brand{display:inline-flex}.admin-top-actions{display:flex;gap:10px;align-items:center}.admin-top-actions .btn{font-size:11px;padding:10px 13px}.admin-kicker{color:#1684ff;font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.admin-title{font-size:clamp(28px,4vw,42px);letter-spacing:-2px;margin:6px 0 0}.admin-subtitle{color:#8295af;font-size:11px;margin:8px 0 0}.admin-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:24px}.admin-stat{border:1px solid rgba(94,151,218,.13);background:#071426;border-radius:16px;padding:18px}.admin-stat span{display:block;color:#8295af;font-size:10px;margin-bottom:10px}.admin-stat strong{font-size:24px}.admin-layout{display:grid;grid-template-columns:1.4fr .9fr;gap:16px}.admin-card{border:1px solid rgba(94,151,218,.13);background:#071426;border-radius:18px;padding:20px}.admin-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px}.admin-card h2{font-size:15px;margin:0}.admin-card p{color:#8295af;font-size:10px}.admin-table-wrap{overflow:auto}.admin-table{width:100%;border-collapse:collapse;font-size:10px;min-width:850px}.admin-table th,.admin-table td{text-align:left;padding:10px;border-bottom:1px solid rgba(94,151,218,.1);vertical-align:middle}.admin-table th{color:#8295af;font-size:9px;text-transform:uppercase;letter-spacing:.5px}.admin-table select,.admin-form input,.admin-form textarea{width:100%;background:#020b18;color:#eef5ff;border:1px solid rgba(94,151,218,.2);border-radius:9px;padding:9px;font:inherit}.admin-form{display:grid;gap:10px}.admin-form label{font-size:10px;color:#8295af}.admin-form input,.admin-form textarea{margin-top:5px}.admin-form textarea{resize:vertical}.admin-note{font-size:10px;color:#8295af;line-height:1.7}.admin-notice{margin-bottom:15px;padding:10px 12px;border-radius:10px;background:#061122;border:1px solid rgba(94,151,218,.12);font-size:10px;color:#aebed2}.pill{display:inline-block;padding:5px 8px;border-radius:999px;background:rgba(22,132,255,.1);color:#54a6ff;font-size:8px;font-weight:800;white-space:nowrap}.product-admin-list{display:grid;gap:8px}.product-admin-item{display:flex;justify-content:space-between;gap:10px;padding:10px;border:1px solid rgba(94,151,218,.1);border-radius:10px}.product-admin-item small{display:block;color:#8295af;margin-top:4px}.product-admin-main{min-width:0;flex:1}.product-admin-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.btn-danger{border:1px solid rgba(255,85,85,.3)!important;background:rgba(255,70,70,.08)!important;color:#ff8d8d!important}.btn-danger:hover{background:rgba(255,70,70,.16)!important;border-color:rgba(255,85,85,.5)!important}.admin-actions{display:flex;gap:8px;flex-wrap:wrap}.admin-actions .btn{font-size:10px}.hidden-admin{display:none!important}@media(max-width:850px){.admin-grid{grid-template-columns:repeat(2,1fr)}.admin-layout{grid-template-columns:1fr}}@media(max-width:850px){#categoryForm{grid-template-columns:1fr!important}}@media(max-width:520px){.admin-wrap{width:calc(100% - 28px);padding-top:18px}.admin-top{align-items:flex-start}.admin-top-actions .btn:first-child{display:none}.admin-grid{gap:9px}.admin-stat{padding:14px}.admin-stat strong{font-size:20px}}
+
+/* Admin dashboard polish */
+.admin-page{font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+.admin-wrap{max-width:1380px}
+.admin-top{padding:2px 2px 0}
+.admin-top .brand-name{font-size:15px}
+.admin-card,.admin-stat{box-shadow:0 12px 35px rgba(0,0,0,.12)}
+.admin-card{min-width:0}
+.admin-card-head{padding-bottom:2px}
+.admin-card-head p{margin:5px 0 0;line-height:1.5}
+.admin-form{gap:12px}
+.admin-form label{display:grid;gap:0;line-height:1.3}
+.admin-form input,.admin-form textarea,.admin-form select,.admin-table select{box-sizing:border-box;min-height:42px;margin-top:7px;padding:11px 12px;border-radius:11px;background:#050f1e;border:1px solid rgba(94,151,218,.2);color:#eef5ff;outline:none;transition:border-color .18s,box-shadow .18s,background .18s}
+.admin-form input::placeholder,.admin-form textarea::placeholder{color:#52657d}
+.admin-form input:focus,.admin-form textarea:focus,.admin-form select:focus,.admin-table select:focus{border-color:rgba(47,140,255,.55);box-shadow:0 0 0 3px rgba(47,140,255,.08);background:#061224}
+.admin-form select{appearance:none;-webkit-appearance:none;padding-right:38px;background-image:linear-gradient(45deg,transparent 50%,#7890ad 50%),linear-gradient(135deg,#7890ad 50%,transparent 50%);background-position:calc(100% - 17px) 18px,calc(100% - 12px) 18px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+.admin-form select option{background:#071426;color:#eef5ff}
+.admin-form input[type="checkbox"]{min-height:0;width:16px;height:16px;margin:0 7px 0 0;padding:0;accent-color:#2f8cff}
+.admin-form label:has(input[type="checkbox"]){display:flex;align-items:center;gap:0;color:#8fa1b8;padding-top:2px}
+.admin-form .btn{width:100%;min-height:44px;border-radius:11px}
+.admin-note{margin-bottom:0}
+.admin-table-wrap{border-radius:12px}
+.product-admin-item{align-items:center;background:rgba(255,255,255,.012);transition:.18s}
+.product-admin-item:hover{border-color:rgba(47,140,255,.25);background:rgba(47,140,255,.025)}
+#categoryForm{gap:12px}
+#categoryForm .btn{min-height:42px;white-space:nowrap}
+#categoriesList:empty{display:none}
+@media(max-width:1050px){.admin-layout{grid-template-columns:1fr 1fr}.admin-card{padding:18px}.admin-title{font-size:34px}}
+@media(max-width:850px){.admin-layout{grid-template-columns:1fr}.admin-card-head{align-items:flex-start}.admin-grid{grid-template-columns:repeat(2,1fr)}#categoryForm{grid-template-columns:1fr!important}#categoryForm .btn{width:100%}}
+@media(max-width:600px){.admin-wrap{width:calc(100% - 24px);padding:16px 0 35px}.admin-top{gap:10px;margin-bottom:18px}.admin-top .brand-name{font-size:13px}.admin-top-actions{gap:7px}.admin-top-actions .btn{padding:9px 11px;font-size:10px}.admin-title{font-size:30px;letter-spacing:-1.4px}.admin-subtitle{font-size:10px}.admin-grid{gap:8px;margin-bottom:14px}.admin-stat{padding:13px;border-radius:13px}.admin-stat span{font-size:9px;margin-bottom:7px}.admin-stat strong{font-size:20px}.admin-card{padding:15px;border-radius:15px}.admin-card h2{font-size:14px}.admin-card p{font-size:9px}.admin-table{min-width:760px}.admin-form{gap:11px}.admin-form input,.admin-form textarea,.admin-form select{min-height:44px}.product-admin-item{padding:11px;align-items:flex-start}.product-admin-actions{width:auto}.product-admin-actions .btn{font-size:9px;padding:8px 10px}.admin-actions{width:100%}.admin-actions .btn{flex:1}.admin-notice{font-size:9px;margin-bottom:12px}}
+@media(max-width:430px){.admin-top{flex-direction:column}.admin-top-actions{width:100%}.admin-top-actions .btn{flex:1;text-align:center}.admin-grid{grid-template-columns:1fr 1fr}.admin-stat strong{font-size:18px}.admin-card{padding:14px}.admin-card-head{margin-bottom:12px}.admin-form label{font-size:9px}.admin-form input,.admin-form textarea,.admin-form select{font-size:11px}.admin-table{min-width:720px}}
+  </style>
+</head>
+<body class="admin-page">
+<main class="admin-wrap">
+  <header class="admin-top"><div><a class="brand" href="index.html"><span class="brand-mark">FS</span><span class="brand-name">Felik Fvnky Store</span></a><div style="margin-top:20px"><div class="admin-kicker">Admin Dashboard</div><h1 class="admin-title">Kelola Store</h1><p class="admin-subtitle">Produk remix, pesanan, penjualan, dan rating.</p></div></div><div class="admin-top-actions"><a class="btn btn-ghost" href="index.html">Lihat Website</a><button class="btn btn-primary" id="logoutBtn">Keluar</button></div></header>
+  <div id="adminNotice" class="admin-notice">Memeriksa akses admin...</div>
+  <section class="admin-grid"><div class="admin-stat"><span>Pesanan</span><strong id="statOrders">0</strong></div><div class="admin-stat"><span>Terjual</span><strong id="statSold">0</strong></div><div class="admin-stat"><span>Sedang dikerjakan</span><strong id="statWorking">0</strong></div><div class="admin-stat"><span>Rating</span><strong id="statRating">0.0</strong></div></section>
+  <section class="admin-layout">
+    <div class="admin-card"><div class="admin-card-head"><div><h2>Pesanan terbaru</h2><p>Ubah status pembayaran/pengerjaan dari sini.</p></div></div><div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Kode</th><th>Style</th><th>Customer</th><th>Lagu</th><th>Total</th><th>Status</th><th>Ubah</th></tr></thead><tbody id="ordersTable"><tr><td colspan="7">Memuat...</td></tr></tbody></table></div></div>
+    <div class="admin-card"><div class="admin-card-head"><div><h2>Tambah produk remix</h2><p>Setelah ditambah, produk tampil dari database.</p></div></div><form id="productForm" class="admin-form"><label>Nama style<input name="title" required placeholder="Contoh: Party Biasa"></label><label>Creator<input name="creator" required placeholder="Contoh: Felik Fvnky"></label><label>Kategori<select id="productCategory" name="categoryId" required><option value="">Memuat kategori...</option></select></label><label>Harga<input name="price" type="number" min="0" required placeholder="185000"></label><label>Genre / label<input name="genreLabel" required placeholder="Party Biasa"></label><label>Link preview audio (opsional)<input name="audioUrl" placeholder="https://..."></label><label>Deskripsi<textarea name="description" rows="3" placeholder="Deskripsi style remix"></textarea></label><label><input name="featured" type="checkbox" style="width:auto;margin-right:6px"> Featured</label><button class="btn btn-primary" type="submit">＋ Tambah Produk</button></form><p class="admin-note" style="margin-top:12px">Produk yang aktif dibaca langsung oleh website. Tidak perlu mengedit daftar produk di app.js lagi.</p></div>
+  </section>
+  <section class="admin-card" style="margin-top:16px"><div class="admin-card-head"><div><h2>Kelola kategori</h2><p>Tambah kategori baru seperti Remix, FLP, atau kategori custom.</p></div></div><form id="categoryForm" class="admin-form" style="grid-template-columns:1fr auto;align-items:end"><label>Nama kategori<input name="categoryName" required placeholder="Contoh: Remix, FLP, Dangdut, Party..." autocomplete="off"></label><button class="btn btn-primary" type="submit">＋ Tambah Kategori</button></form><div id="categoriesList" class="product-admin-list" style="margin-top:12px">Memuat...</div></section>
+  <section class="admin-card" style="margin-top:16px"><div class="admin-card-head"><div><h2>Produk di database</h2><p>Jumlah terjual dihitung dari pesanan yang sudah benar-benar PAID.</p></div></div><div id="productsList" class="product-admin-list">Memuat...</div></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
