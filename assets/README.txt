@@ -1,1 +1,0 @@
-Letakkan gambar QRIS toko kamu di folder ini dengan nama qris.png
